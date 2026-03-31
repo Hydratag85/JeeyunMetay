@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Jeeyun METAY</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+    <header>
+        <nav>
+            <ul>
+                <li class="nav-home-item"><a href="#top" class="nav-link">Accueil</a></li>
+                <li><a href="#hero" class="nav-link">à propos</a></li>
+                <li><a href="#projects" class="nav-link">Projets</a></li>
+                <li><a href="#skills" class="nav-link">Compétences</a></li>
+                <li><a href="contact.html" class="btn-contact">Me Contacter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <img src="image/jeeyun-portrait.png" alt="Portrait de Jeeyun Metay" class="hero-portrait">
+        <h1>Bonjour, je suis Jeeyun Metay</h1>
+        <p>Élève de Terminale générale au lycée Jean Monnet (Les Herbiers)</p>
+    </section>
+
+    <section id="projects">
+        <h2>Mes Projets &amp; Engagements</h2>
+
+        <div class="slider-container">
+            <button class="prev-btn" onclick="moveSlider(-1)">&#10094;</button>
+
+            <div class="project-window">
+                <div class="project-grid" id="slider">
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3>Bal de promo (CVL)</h3>
+                            <p>Organisation complète : thème, DJ ou groupe, repas, décorations, photomaton, animations, invitations et logistique.</p>
+                            <a href="projet/projets/baldepromo.html" class="btn-more">Voir les détails</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3>Tournois de sport &amp; animations</h3>
+                            <p>Tournois volley/basket, concours de pancartes d'encouragement et animations en lien avec l'association sportive.</p>
+                            <a href="projet/projets/tournois-animations.html" class="btn-more">Voir les détails</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3>Semaine de la diversité &amp; journées à thème</h3>
+                            <p>Actions collectives, journées déguisées et projets portés par le Conseil de Vie Lycéenne.</p>
+                            <a href="projet/projets/diversite-theme.html" class="btn-more">Voir les détails</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3>Organisation d'événements</h3>
+                            <p>Anniversaires surprises, vacances en camping entre amis et journées plage pour une dizaine de personnes.</p>
+                            <a href="projet/projets/organisation-evenements.html" class="btn-more">Voir les détails</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="next-btn" onclick="moveSlider(1)">&#10095;</button>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <div class="skills-intro">
+            <h2>Compétences - qualités</h2>
+            <p>Sélectionne un domaine pour afficher mes atouts. Les jauges se déclenchent au scroll.</p>
+        </div>
+
+        <div class="skills-filters" role="tablist" aria-label="Filtres de competences">
+            <button class="skills-filter is-active" data-filter="all" type="button">Tout</button>
+            <button class="skills-filter" data-filter="organisation" type="button">Organisation</button>
+            <button class="skills-filter" data-filter="engagement" type="button">Engagement</button>
+            <button class="skills-filter" data-filter="relationnel" type="button">Relationnel</button>
+            <button class="skills-filter" data-filter="qualites" type="button">Qualités</button>
+            <button class="skills-filter" data-filter="langues" type="button">Langues</button>
+        </div>
+
+        <div class="skills-grid">
+            <article class="skill-card" data-domain="organisation" data-level="84">
+                <p class="skill-domain">Organisation</p>
+                <h3>Planifier et coordonner des événements</h3>
+                <p class="skill-text">Bal de promo, journées à thème, tournois sportifs et actions collectives.</p>
+                <div class="skill-bar"><span></span></div>
+                <p class="skill-score">Niveau estime: 90%</p>
+            </article>
+
+            <article class="skill-card" data-domain="engagement" data-level="88">
+                <p class="skill-domain">Engagement</p>
+                <h3>Participer à la vie de l'établissement</h3>
+                <p class="skill-text">Déléguée de classe, CVL, conseil d'administration et conseil de discipline.</p>
+                <div class="skill-bar"><span></span></div>
+                <p class="skill-score">Niveau estime: 95%</p>
+            </article>
+
+            <article class="skill-card" data-domain="relationnel" data-level="82">
+                <p class="skill-domain">Relationnel</p>
+                <h3>Travail en équipe</h3>
+                <p class="skill-text">Collaborer, communiquer et rester à l'écoute dans des projets collectifs.</p>
+                <div class="skill-bar"><span></span></div>
+                <p class="skill-score">Niveau estime: 90%</p>
+            </article>
+
+            <article class="skill-card" data-domain="qualites" data-level="80">
+                <p class="skill-domain">Qualités</p>
+                <h3>Capacité d'adaptation</h3>
+                <p class="skill-text">Réactivité, agilité et efficacité face aux imprévus.</p>
+                <div class="skill-bar"><span></span></div>
+                <p class="skill-score">Niveau estime: 80%</p>
+            </article>
+
+            <article class="skill-card" data-domain="qualites" data-level="78">
+                <p class="skill-domain">Qualités</p>
+                <h3>Rigueur et minutie</h3>
+                <p class="skill-text">Soigner les détails et livrer un travail propre et fiable.</p>
+                <div class="skill-bar"><span></span></div>
+                <p class="skill-score">Niveau estime: 81%</p>
+            </article>
+
+            <article class="skill-card" data-domain="langues" data-level="72">
+                <p class="skill-domain">Langues</p>
+                <h3>Français, anglais, espagnol</h3>
+                <p class="skill-text">Communication scolaire et quotidienne.</p>
+                <div class="skill-bar"><span></span></div>
+                <p class="skill-score">Niveau estime: 68%</p>
+            </article>
+        </div>
+    </section>
+
+    <div class="timeline" id="timeline">
+        <div class="container left-container">
+            <div class="texte-box" data-url="#">
+                <h2>Collège Jean Rostand</h2>
+                <small>6e à 3e</small>
+                <p>Scolarité au collège Jean Rostand aux Herbiers.</p>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="container right-container">
+            <div class="texte-box" data-url="#">
+                <h2>Lycée Jean Monnet</h2>
+                <small>2nde à Terminale</small>
+                <p>Élève de Terminale générale au lycée Jean Monnet (Les Herbiers).</p>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="container left-container">
+            <div class="texte-box" data-url="#">
+                <h2>Engagements scolaires</h2>
+                <small>Déléguée - CVL</small>
+                <p>Déléguée de classe (5 ans), membre du CVL (3 ans), conseil d'administration et conseil de discipline.</p>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="container right-container">
+            <div class="texte-box" data-url="#">
+                <h2>Stage d'observation - 3e</h2>
+                <small>GEMO</small>
+                <p>Anti-volage et mise en rayon.</p>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="container left-container">
+            <div class="texte-box" data-url="#">
+                <h2>Stage d'observation - 2nde</h2>
+                <small>Service en restauration</small>
+                <p>Les Jardins du Lavoir / Civilisations (Les Herbiers).</p>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="container right-container">
+            <div class="texte-box" data-url="#">
+                <h2>Service National Universel</h2>
+                <small>Juillet 2024 - 2 semaines</small>
+                <p>Engagement et vie collective dans le cadre du SNU.</p>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="container left-container">
+            <div class="texte-box" data-url="#">
+                <h2>Extras professionnels</h2>
+                <small>Occasionnels</small>
+                <p>Serveuse pour des extras en mariage et extra en camping pour du ménage.</p>
+                <span></span>
+            </div>
+        </div>
+
+              <div class="container right-container">
+            <div class="texte-box" data-url="#">
+                <h2>Job extra-scolaires</h2>
+                <small>Hors-scolaire</small>
+                <p>Engagement de 2 mois au puy du fou en tant que vendeuse et chantier jeune occasionnelement au Herbiers.</p>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="container future-container">
+            <div class="future-box" data-url="#">
+                <h2>Centres d'intérêt</h2>
+                <p>Danse (modern-jazz, street), couture / mode, voyager et sortir entre amis.</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="about-contact-section" id="about-contact">
+        <div class="about-contact-inner">
+            <p class="about-contact-tag">A propos</p>
+            <h2>Informations personnelles</h2>
+            <p class="about-contact-intro">
+                Cette section regroupe mes coordonnées, mon établissement actuel et mes certifications.
+            </p>
+
+            <div class="about-contact-grid">
+                <article class="about-card">
+                    <h3>Coordonnées</h3>
+                    <ul class="about-list">
+                        <li>
+                            <span>Email</span>
+                            <a href="mailto:jeeyun.metay@gmail.com">jeeyun.metay@gmail.com</a>
+                        </li>
+                        <li>
+                            <span>Téléphone</span>
+                            <a href="tel:+33769421000">+33 7 69 42 10 00</a>
+                        </li>
+                        <li>
+                            <span>Adresse</span>
+                            <p>16 rue des bois, 85130 La Gaubretière, Vendée</p>
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="about-card">
+                    <h3>Parcours et certifications</h3>
+                    <ul class="about-list">
+                        <li>
+                            <span>École actuelle</span>
+                            <p>Lycée Jean Monnet, Les Herbiers (Terminale générale)</p>
+                        </li>
+                        <li>
+                            <span>Certification</span>
+                            <p>PSC1</p>
+                        </li>
+                        <li>
+                            <span>Engagement</span>
+                            <p>Service National Universel - juillet 2024</p>
+                        </li>
+                        <li>
+                            <span>Permis</span>
+                            <p>Titulaire du permis B</p>
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="about-card about-card-actions">
+                    <h3>CV</h3>
+                    <p>
+                        Télécharge mon CV ou contacte-moi pour en savoir plus.
+                    </p>
+                    <div class="about-actions">
+                        <a href="projet/CV-Jeeyun%20METAY.pdf" class="about-btn" download>Télécharger mon CV</a>
+                        <a href="projet/cv.html" class="about-btn about-btn-secondary">Voir la page CV</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer" id="contact">
+        <div class="footer-inner">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>A propos</h3>
+                    <a href="#hero">Mon profil</a>
+                    <a href="#projects">Mes projets</a>
+                    <a href="#skills">Mes competences</a>
+                    <a href="#timeline">Mon parcours</a>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Aides</h3>
+                    <a href="projet/cv.html">CV</a>
+                    <a href="#">Recommandations</a>
+                    <a href="#">Questions frequentes</a>
+                    <a href="#">Lexique technique</a>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Engagements</h3>
+                    <a href="projet/projets/baldepromo.html">Bal de promo</a>
+                    <a href="projet/projets/tournois-animations.html">Tournois et animations</a>
+                    <a href="projet/projets/diversite-theme.html">Diversite et themes</a>
+                    <a href="projet/projets/organisation-evenements.html">Organisation d'evenements</a>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Divers</h3>
+                    <a href="#">Mentions legales</a>
+                    <a href="#">Politique de confidentialite</a>
+                    <a href="contact.html">Me contacter</a>
+                    <a href="#">Plan du site</a>
+                </div>
+            </div>
+
+            <div class="footer-brand-line">
+                <p class="footer-brand">Jeeyun<span>Metay</span></p>
+                <p class="footer-copy">Copyright © 2026 Jeeyun Metay - Tous droits reserves</p>
+            </div>
+
+            <div class="footer-socials" aria-label="Reseaux sociaux">
+                <a href="mailto:jeeyun.metay@gmail.com" aria-label="Email">@</a>
+            </div>
+        </div>
+    </footer>
+
+    <aside class="cookie-banner" id="cookieBanner" role="dialog" aria-live="polite" aria-label="Consentement cookies">
+        <p>
+            Ce site utilise des cookies pour ameliorer votre experience. Vous pouvez accepter ou refuser.
+        </p>
+        <div class="cookie-actions">
+            <button type="button" class="cookie-btn cookie-btn-accept" id="cookieAcceptBtn">Accepter</button>
+            <button type="button" class="cookie-btn cookie-btn-refuse" id="cookieRefuseBtn">Refuser</button>
+        </div>
+    </aside>
+
+    <script src="main.js"></script>
+</body>
+</html>
